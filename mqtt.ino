@@ -175,7 +175,7 @@ void sendDistanceMeasure(){
 }
 
 void sendAcceleration(){
-  snprintf(data, sizeof(data), "x:%.2f | y:%.2f", ax, ay);          
+  snprintf(data, sizeof(data), "x:%.2f", ax);          
   MQTT.publish(TOPIC_PUBLISH_ACCELEROMETER, data);  
 }
 

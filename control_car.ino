@@ -15,8 +15,6 @@ extern void read_accel_gyro();
 extern void sendValues();
 extern void configPinLed();
 extern void blinkLed();
-extern void configPinsUltrassonicSensors();
-extern void readDistanceUltrassonic();
 
 extern PubSubClient MQTT;
 
@@ -27,7 +25,6 @@ void setup() {
   configPinsMotor();
   conectaWiFi();
   initMqtt();
-  //configPinsUltrassonicSensors();
   configPinsSensorsDistance();
   initSensorsDistance();
   initMPU6050();
@@ -38,7 +35,6 @@ void loop() {
   mantemConexoes();
   MQTT.loop();
   read_sensors();
-  //readDistanceUltrassonic();
   read_accel_gyro();
   sendValues();
 }
