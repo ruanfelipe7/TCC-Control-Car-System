@@ -1,6 +1,6 @@
 //WiFi
-const char* SSID = "brisa-156431";                // SSID / nome da rede WiFi que deseja se conectar
-const char* PASSWORD = "rawxauqc";                 //Senha da rede WiFi que deseja se conectar
+const char* SSID = "SSID";                // SSID / nome da rede WiFi que deseja se conectar
+const char* PASSWORD = "PASSWORD";                 //Senha da rede WiFi que deseja se conectar
 WiFiClient wifiClient;
 
 //MQTT
