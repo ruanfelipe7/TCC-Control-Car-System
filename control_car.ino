@@ -25,9 +25,9 @@ void setup() {
   configPinsMotor();
   conectaWiFi();
   initMqtt();
+  initMPU6050();
   configPinsSensorsDistance();
   initSensorsDistance();
-  initMPU6050();
   blinkLed();
 }
 

@@ -103,19 +103,19 @@ void turnLeftBackCar(){
 }
 
 void autonomousDrive(){
-  if(distancia1 > 100){
+  if(distancia1 > 200){
     frontCar(0);
   }else{
     stopCar();
-    backCar(500);
+    backCar(300);
     delay(500);
     if(distancia3 > distancia2){
       if(distancia3 > 100){
-        turnLeftFrontCar(900); 
+        turnLeftFrontCar(500); 
       } 
     }else{
       if(distancia2 > 100){
-        turnRightFrontCar(900); 
+        turnRightFrontCar(500); 
       }   
     }
     stopCar();
